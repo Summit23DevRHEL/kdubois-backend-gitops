@@ -1,0 +1,15 @@
+app:
+  name: poi-backend-app
+  namespace: kdubois
+  cluster: .apps.summit23-dr.w6gk.p1.openshiftapps.com
+
+git:
+  branch: main
+  repo: https://github.com/Summit23DevRHEL/kdubois-backend
+  org: Summit23DevRHEL
+  name: kdubois-backend
+
+image:
+  host: image-registry.openshift-image-registry.svc:5000
+  name: kdubois/poi-backend-app
+  tag: latest
